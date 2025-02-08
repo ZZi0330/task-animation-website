@@ -5,4 +5,9 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base:'/task-animation-website/',
   plugins: [react()],
+  build: {
+      rollupOptions: {
+      input: 'index.html', // 指定入口文件
+    },
+  } 
 })
